@@ -1,0 +1,6 @@
+rootProject.name = 'bigdatapw'
+
+include 'crawler'
+include 'flink'
+include 'model'
+
