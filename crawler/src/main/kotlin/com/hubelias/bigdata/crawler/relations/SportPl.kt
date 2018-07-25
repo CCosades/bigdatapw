@@ -21,7 +21,7 @@ class SportPl(driver: ChromeDriver) : AbstractWorldCupRelationsCrawler(driver) {
                     ?.singleOrNull()
                     ?.getAttribute("href")
                     ?.also { driver.get(it) }
-            sleep(500)
+            sleep(1500)
         } while (nextPageLink != null)
 
         return allRelations

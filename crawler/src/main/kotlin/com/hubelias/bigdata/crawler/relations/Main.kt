@@ -10,7 +10,7 @@ fun main(args: Array<String>) {
     System.setProperty("webdriver.chrome.driver", driverPath.toString())
 
     val driver = ChromeDriver()
-    val crawler : AbstractWorldCupRelationsCrawler = Onet(driver)
+    val crawler: AbstractWorldCupRelationsCrawler = Tvp(driver)
 
     val gson = Gson()
     val outputFile = File(crawler.javaClass.simpleName.toLowerCase() + ".txt")
