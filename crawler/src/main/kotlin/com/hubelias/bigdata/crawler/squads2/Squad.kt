@@ -1,6 +1,4 @@
-package com.hubelias.bigdata.crawler.squads
-
-import java.time.LocalDate
+package com.hubelias.bigdata.crawler.squads2
 
 
 data class Squad(
@@ -10,10 +8,17 @@ data class Squad(
 )
 
 data class Player(
+        val name: String,
+        val position: Position,
+        val club: String
+)
+
+data class Player2(
         val number: Int,
         val name: String,
         val position: Position,
-        val age: Int
+        val club: String,
+        val yearOfBirth: Int
 )
 
 enum class Position {
